@@ -6,8 +6,8 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-index_example
-elements_example
+index_example.md
+elements_example.md
 
 # Additional Ruby/bundler ignore for when you run: bundle install
 /vendor
