@@ -40,13 +40,15 @@ paginate_path: blog/page:num # jekyll-paginate > blog page
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
 twitter:
   # username: DavidDarnes # jekyll-seo-tag > Owners twitter username
-# author: DavidDarnes # jekyll-seo-tag > default author
+author: Charles Wei # jekyll-seo-tag > default author
 social: # jekyll-seo-tag > social overrides
   name: Charles Wei # jekyll-seo-tag > real name
   links:  # jekyll-seo-tag > social aliases (sameAs)
     - https://www.facebook.com/charlie.wei.7
     - https://www.linkedin.com/in/charles-wei/
     - https://github.com/charlie6901
+    # - https://www.instagram.com
+    # - https://www.youtube.com
 # markdown: CommonMark # Markdown parse settings, CommonMark performs slightly better an others in build time
 # commonmark:
   # options: ["SMART", "FOOTNOTES"]
@@ -69,6 +71,7 @@ collections:
     # feature_text: |
       # Welcome to the blog
     # feature_image: "https://picsum.photos/2560/600?image=866"
+    
 
 # 6. Jekyll collections settings
 defaults:
@@ -92,10 +95,10 @@ defaults:
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
-lang: en-GB # Set the site language
+lang: en-US # Set the site language
 title: Charles Wei  # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
-description: Charles Wei portfolio and blog # Site description and default description, also used in jekyll-seo-tag
+description: Portfolio and Blog # Site description and default description, also used in jekyll-seo-tag
 url: "https://charlie6901.github.io/" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/charlie6901/charlie6901.github.io"
@@ -129,8 +132,8 @@ navigation_header:
   url: /blog/
 # - title: Categories
 #   url: /categories/
-# - title: Search
-#   url: /search/
+- title: Search
+  url: /search/
 # - title: Fork Alembic
 #   url: https://github.com/daviddarnes/alembic
 
@@ -141,6 +144,9 @@ social_links: # Appears in sidebar. Set the urls then uncomment and comment out 
   # Twitter: https://twitter.com/DavidDarnes
   LinkedIn: https://www.linkedin.com/in/charles-wei/
   GitHub: https://github.com/charlie6901
+  # FaceBook: https://www.facebook.com/charlie.wei.7
+  # Instagram: https://www.instagram.com
+  # YouTube: https://www.youtube.com
   # RSS: /feed.xml
 
 sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour

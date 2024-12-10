@@ -1,1 +1,18 @@
-<svg width="{{ include.width | default: "16" }}" height="{{ include.height | default: "16" }}" class="icon  icon--{{ include.id | default: "link" }}" role="img" alt="{{ include.title | default: include.id }}"><title>{{ include.title | default: include.id }}</title><use xlink:href="#{{ include.id | default: "link" }}" fill="{{ include.color | default: 'CurrentColor' }}"></use></svg>
+<svg 
+    width="{{ include.width | default: '16' }}" 
+    height="{{ include.height | default: '16' }}" 
+    class="icon  icon--{{ include.id | default: 'link' }}" 
+    role="img" 
+    alt="{{ include.title | default: include.id }}">
+  <title>{{ include.title | default: include.id }}</title>
+  <use 
+      xlink:href="#{{ include.id | default: 'link' }}" 
+      fill="{% if include.id == 'facebook' %}#3b5998
+            {% elsif include.id == 'twitter' %}#1da1f2
+            {% elsif include.id == 'linkedin' %}#0077b5
+            {% elsif include.id == 'github' %}#211f1f
+            {% elsif include.id == 'youtube' %}#FF0000
+            {% elsif include.id == 'instagram' %}#8a3ab9
+            {% else %}CurrentColor{% endif %}">
+  </use>
+</svg>
